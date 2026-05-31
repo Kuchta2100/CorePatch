@@ -16,26 +16,26 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd "INSTALL_FAILED_VERSION_DOWNGRADE".
 
 **Wyłącz weryfikację skrótu**:
-Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
+<br>Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
 (ignoruje błąd nieprawidłowego skrótu)
 
 **Wyłącz porównywanie podpisów**:
-Zezwala na ponowną instalację aplikacji z innymi podpisami
+<br>Zezwala na ponowną instalację aplikacji z innymi podpisami
 
 **Wyłącz dokładne dopasowanie podpisu**:
-Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. Włączaj tylko w razie potrzeby!
+<br>Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. Włączaj tylko w razie potrzeby!
 
 **Użyj zainstalowanych podpisów**:
-Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
+<br>Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
 Jest to niezwykle niebezpieczne.
 Włączaj tylko wtedy, gdy jest to absolutnie konieczne!
 
 **Obejście blokady**:
-Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
+<br>Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
 **Pomiń weryfikację wspólnego użytkownika**:
-Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
+<br>Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
 ("Wyłącz porównywanie podpisów” musi być również włączona)
 
 **Wyłącz agenta weryfikacji pakietów**:
-np. Google Play Protect
+<br>np. Google Play Protect
