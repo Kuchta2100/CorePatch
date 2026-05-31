@@ -41,6 +41,12 @@ jobs:
       with:
         name: CorePatch
         path: app/build/outputs/apk
+    - name: Rename APK
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      run: |
+        mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch.apk
+        mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-debug.apk
+        
     - name: Release
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v1
@@ -48,6 +54,8 @@ jobs:
         files: app/build/outputs/apk/**/*.apk
         tag_name: CorePatch-4.9
         generate_release_notes: true
+        make_latest: true
+        replace_existing: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+        GITHUB_TOKEN: ${{ secrets.GITHUB_
+        TOKEN }}
