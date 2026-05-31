@@ -6,9 +6,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,30 +25,29 @@ jobs:
       if: github.event_name != 'pull_request'
       run: |
         if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
-          echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
-          echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
-          echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
-          echo releaseStoreFile='key.jks' >> gradle.properties
-          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > key.jks
+        echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
+        echo releaseKeyAlias='${{ secrets.ALIAS }}' >> gradle.properties
+        echo releaseKeyPassword='${{ secrets.KEY_PASSWORD }}' >> gradle.properties
+        echo releaseStoreFile='key.jks' >> gradle.properties
+        echo ${{ secrets.SIGNING_KEY }} | base64 --decode > key.jks
         fi
 
     - name: Build with Gradle
       run: ./gradlew assembleRelease assembleDebug
 
-    - name: Rename APK
+    - name: Move and Rename APK
       if: github.event_name != 'pull_request'
       run: |
         mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch-PL.apk
         mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-PL-debug.apk
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: CorePatch-PL
         path: |
           app/build/outputs/apk/release/CorePatch-PL.apk
           app/build/outputs/apk/debug/CorePatch-PL-debug.apk
-        if-no-files-found: warn
   
     - name: Release
       if: github.event_name != 'pull_request'
@@ -62,6 +58,5 @@ jobs:
           app/build/outputs/apk/debug/CorePatch-PL-debug.apk
         tag_name: CorePatch-PL-4.9
         generate_release_notes: true
-        make_latest: true
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
