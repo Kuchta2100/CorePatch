@@ -1,47 +1,45 @@
 # CorePatch
+An xposed module for Vector (formerly LSPosed) that disables signature verification in Android.
 
-An Xposed Framework module that disables signature verification on Android.
-
-![Android CI](https://github.com/coderstory/CorePatch/workflows/Android%20CI/badge.svg)
 ![GitHub Release (latest by date)](https://img.shields.io/github/v/release/coderstory/CorePatch)
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
+### Supported Android Versions
 
-### Supported Android versions
-
-CorePatch has been developed to support multiple Android versions through different branches.
-
-`main` branch: Supports Android 10-15.  
-`Q` branch: Supports Android 9.0-10.0.  
-`master` branch: Supports Android 4.4-7.x.
-
-Note: For Android 8.x, you may need to find the commit that changed the version name to 2.1 and compile the module yourself.
+This version is only for **Android 9-16.**
+<br>![](https://img.shields.io/badge/INFO-Użyaj%20najczesna%20wsji%20aplikacji%20Vector-blue)
 
 ## Features
 
-CorePatch provides several key features to bypass Android's standard installation checks.
+CorePatch offers several key features that allow you to bypass standard Android installation checks.
 
-**Downgrade apps**: Allows you to install an older version of an app, suppressing the `INSTALL_FAILED_VERSION_DOWNGRADE` error.  
-**Install modified APKs**: Ignores errors like "Invalid digest", allowing you to install apps that have been modified after compilation.  
-**Install with inconsistent signatures**: Overlays and installs apps even if their signatures don't match the currently installed version.
+ **Allow Downgrade**:
+<br>Allows you to install an older version of the app, eliminating the error:
+<br>![](https://img.shields.io/badge/INFO-INSTALL__FAILED__VERSION__DOWNGRADE-green)
 
-### Download
+**Disable Hash Verification**:
+<br>Allows you to install the app after modifying the APK
+<br>![](https://img.shields.io/badge/INFO-ignores%20badge%20hash%20error-green)
 
-**Latest release**: You can download the latest stable version from the [GitHub Releases](https://github.com/LSPosed/CorePatch/releases) page.  
-**Development builds**: Get the latest development builds directly from [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
-**Historical versions**: Older versions are available for download [here](https://soft.shouji.com.cn/down/32512.html).
+**Disable Signature Comparison**:
+<br>Allows you to reinstall apps with different signatures
 
-### Credits
+**Disable Exact Signature Match**:
+<br>Disables exact signature matching between APKs, allowing installations where each APK fragment has a different signature.
 
-Special thanks to the following for their contributions.
-- [weishu](https://github.com/tiann): For code references.
-- [LSPosed](https://github.com/LSPosed/LSPosed): For the ART Hook Framework.
-- [yujincheng08](https://github.com/yujincheng08): For technical support.
+ <br>![](https://img.shields.io/badge/WARNING!-Enable%20only%20w%20razie%20needs!-red)
 
-### Community & support
+**Use installed signatures**:
+<br>Always uses the signatures of already installed apps during installation.
+<br>![](https://img.shields.io/badge/WARNING!-It's%20extremely%20safe-red)
+<br>![](https://img.shields.io/badge/WARNING!-It's%20absolutely%20necessary-red)
 
-Join the community on [Telegram](https://t.me/core_patch_chat) to discuss the module and get support.  
-If you find this project useful, consider supporting the developer via [PayPal](https://www.paypal.com/paypalme/code620).
+**Bypass**:
+<br>Bypasses the list of blocked installations on some devices, e.g., the Nothing Phone.
 
-### License
+ **Skip shared user verification**:
+<br>Allows installation of apps with a signature different from the shared user.
+<br>![](https://img.shields.io/badge/INFO-Wyłącz%20porównanie%20podpisów-blue)
+<br>![](https://img.shields.io/badge/musi%20być%20rownież%20włączone-blue)
 
-CorePatch is released under the GPL V2 license. See the `LICENSE` file for more details.
+**Disable package verification agent**:
+<br>e.g., Google Play Protect
