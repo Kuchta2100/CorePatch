@@ -17,7 +17,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Wyłącz weryfikację skrótu**:
 <br>Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
-![](https://img.shields.io/badge/INFO-ignoruje%20błąd%20nieprawidłowego%20skrót-green)
+<br>![](https://img.shields.io/badge/INFO-ignoruje%20błąd%20nieprawidłowego%20skrót-green)
 
 
 
