@@ -22,7 +22,6 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>![](https://img.shields.io/badge/INFO-ignoruje%20błąd%20nieprawidłowego%20skrótu-green)
 
 
-
 **Wyłącz porównywanie podpisów**:
 <br>Zezwala na ponowną instalację aplikacji z innymi podpisami
 
@@ -42,7 +41,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
 **Pomiń weryfikację wspólnego profilu**:
-<br>Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy..
+<br>Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy.
 <br>![](https://img.shields.io/badge/INFO-Wyłącz%20porównywanie%20podpisów-blue)
 <br>![](https://img.shields.io/badge/musi%20być%20również%20włączone-blue)
 
