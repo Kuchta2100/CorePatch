@@ -41,8 +41,8 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 **Obejście blokady**:
 <br>Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
-**Pomiń weryfikację wspólnego użytkownika**:
-<br>Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
+**Pomiń weryfikację wspólnego profilu**:
+<br>Umożliwia instalację aplikacji współdzielących to samo konto systemowe, nawet jeśli mają różne podpisy..
 <br>![](https://img.shields.io/badge/INFO-Wyłącz%20porównywanie%20podpisów-blue)
 <br>![](https://img.shields.io/badge/musi%20być%20również%20włączone-blue)
 
