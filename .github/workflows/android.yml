@@ -1,8 +1,8 @@
-name: Android CI
+name: CorePatch-PL
 
 on:
   push:
-    branches: [ main ]
+    branches: [ PL ]
   pull_request:
   workflow_dispatch:
 
@@ -39,5 +39,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: outputs
+        name: CorePatch-PL
         path: app/build/outputs/apk
