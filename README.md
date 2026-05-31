@@ -49,3 +49,25 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Wyłącz agenta weryfikacji pakietów**:
 <br>np. Google Play Protect
+
+### Pobieranie
+
+**Najnowsze wydanie**: Możesz pobrać najnowszą stabilną wersję ze strony [GitHub Releases](https://github.com/LSPosed/CorePatch/releases).  
+**Wersje rozwojowe**: Pobierz najnowsze wersje testowe bezpośrednio z [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
+**Wersje archiwalne**: Starsze wersje są dostępne do pobrania [tutaj](https://soft.shouji.com.cn/down/32512.html).
+
+### Podziękowania
+
+Specjalne podziękowania dla następujących osób za ich wkład w projekt:
+- [weishu](https://github.com/tiann): Za udostępnienie kodu źródłowego.
+- [LSPosed](https://github.com/LSPosed/LSPosed): Za framework ART Hook.
+- [yujincheng08](https://github.com/yujincheng08): Za wsparcie techniczne.
+
+### Społeczność i wsparcie
+
+Dołącz do społeczności na [Telegramie](https://t.me/core_patch_chat), aby podyskutować o module i uzyskać pomoc.  
+Jeśli uważasz ten projekt za przydatny, rozważ wsparcie programisty za pośrednictwem serwisu [PayPal](https://www.paypal.com/paypalme/code620).
+
+### Licencja
+
+CorePatch jest wydawany na licencji GPL V2. Więcej szczegółów znajdziesz w pliku `LICENSE`.
