@@ -2,45 +2,38 @@
 Moduł Xposed Framework, który wyłącza weryfikację podpisów w systemie Android.
 
 ![Android CI](https://github.com/coderstory/CorePatch/workflows/Android%20CI/badge.svg)
-![GitHub Release (latest by date)](https://img.shields.io/github/v/release/coderstory/CorePatch)
+![Wydanie GitHub (najnowsze według daty)](https://img.shields.io/github/v/release/coderstory/CorePatch)
 ![CRAN/METACRAN](https://img.shields.io/cran/l/devtools)
-
 ### Obsługiwane wersje Androida
 
-CorePatch has been developed to support multiple Android versions through different branches.
+Ta wersja jest przeznaczona wyłącznie dla systemu Android 9–16.\nUżywaj najnowszej wersji aplikacji Vector.
 
-`main` branch: Supports Android 10-15.  
-`Q` branch: Supports Android 9.0-10.0.  
-`master` branch: Supports Android 4.4-7.x.
+## Funkcje
 
-Note: For Android 8.x, you may need to find the commit that changed the version name to 2.1 and compile the module yourself.
+CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe kontrole instalacji systemu Android.
 
-## Features
+**Zezwól na obniżenie wersji**: 
+Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd `INSTALL_FAILED_VERSION_DOWNGRADE`.
 
-CorePatch provides several key features to bypass Android's standard installation checks.
+**Wyłącz weryfikację skrótu**:
+Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
+(ignoruje błąd nieprawidłowego skrótu)
 
-**Downgrade apps**: Allows you to install an older version of an app, suppressing the `INSTALL_FAILED_VERSION_DOWNGRADE` error.  
-**Install modified APKs**: Ignores errors like "Invalid digest", allowing you to install apps that have been modified after compilation.  
-**Install with inconsistent signatures**: Overlays and installs apps even if their signatures don't match the currently installed version.
+**Wyłącz porównywanie podpisów**
+Zezwala na ponowną instalację aplikacji z innymi podpisami
 
-### Download
+**Wyłącz dokładne dopasowanie podpisu**
+Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. \nWłączaj tylko w razie potrzeby!
 
-**Latest release**: You can download the latest stable version from the [GitHub Releases](https://github.com/LSPosed/CorePatch/releases) page.  
-**Development builds**: Get the latest development builds directly from [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
-**Historical versions**: Older versions are available for download [here](https://soft.shouji.com.cn/down/32512.html).
+**Użyj zainstalowanych podpisów**
+Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.\nJest to niezwykle niebezpieczne.
+.\nWłączaj tylko wtedy, gdy jest to absolutnie konieczne!
 
-### Credits
+**Obejście blokady**
+Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
-Special thanks to the following for their contributions.
-- [weishu](https://github.com/tiann): For code references.
-- [LSPosed](https://github.com/LSPosed/LSPosed): For the ART Hook Framework.
-- [yujincheng08](https://github.com/yujincheng08): For technical support.
+**Pomiń weryfikację wspólnego użytkownika**
+Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik (\"Wyłącz porównywanie podpisów” musi być również włączona)
 
-### Community & support
-
-Join the community on [Telegram](https://t.me/core_patch_chat) to discuss the module and get support.  
-If you find this project useful, consider supporting the developer via [PayPal](https://www.paypal.com/paypalme/code620).
-
-### License
-
-CorePatch is released under the GPL V2 license. See the `LICENSE` file for more details.
+**Wyłącz agenta weryfikacji pakietów**
+np. Google Play Protect
