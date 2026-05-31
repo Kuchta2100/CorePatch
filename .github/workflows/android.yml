@@ -1,4 +1,4 @@
-name: Core Patch
+name: CorePatch-PL
 
 on:
   push:
@@ -46,7 +46,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: app/build/outputs/apk/**/*.apk
-        tag_name: v.4.9.${{ github.run_number }}
+        tag_name: v.4.9
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
