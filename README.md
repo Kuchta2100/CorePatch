@@ -53,14 +53,14 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 ### Pobieranie
 
 **Najnowsze wydanie**: Możesz pobrać najnowszą stabilną wersję ze strony [GitHub Releases](https://github.com/LSPosed/CorePatch/releases).  
+
 **Wersje rozwojowe**: Pobierz najnowsze wersje testowe bezpośrednio z [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
-**Wersje archiwalne**: Starsze wersje są dostępne do pobrania [tutaj](https://soft.shouji.com.cn/down/32512.html).
 
 ### Podziękowania
 
 Specjalne podziękowania dla następujących osób za ich wkład w projekt:
 - [weishu](https://github.com/tiann): Za udostępnienie kodu źródłowego.
-- [LSPosed](https://github.com/LSPosed/LSPosed): Za framework ART Hook.
+- [LSPosed](https://github.com/LSPosed/LSPosed): Za strukturę przechwytywania ART.
 - [yujincheng08](https://github.com/yujincheng08): Za wsparcie techniczne.
 
 ### Społeczność i wsparcie
