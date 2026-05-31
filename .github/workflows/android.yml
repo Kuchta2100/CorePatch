@@ -50,36 +50,12 @@ jobs:
         name: outputs
         path: app/build/outputs/apk
 
-    - name: Create Release
+    - name: Upload to Releases
       if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ncipollo/release-action@v1
       with:
-        tag_name: "v4.9-${{ github.run_number }}"
-        release_name: "CorePatch PL v4.9 (Build #${{ github.run_number }})"
-        draft: false
-        prerelease: false
-
-    - name: Upload Release Asset (Release APK)
-      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: app/build/outputs/apk/release/CorePatch-PL.apk
-        asset_name: CorePatch-PL.apk
-        asset_content_type: application/vnd.android.package-archive
-
-    - name: Upload Release Asset (Debug APK)
-      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: app/build/outputs/apk/debug/CorePatch-PL-debug.apk
-        asset_name: CorePatch-PL-debug.apk
-        asset_content_type: application/vnd.android.package-archive
+        artifacts: "app/build/outputs/apk/release/CorePatch-PL.apk,app/build/outputs/apk/debug/CorePatch-PL-debug.apk"
+        tag: "v4.9-2047"
+        name: "CorePatch PL v4.9 (Build 2047)"
+        allowUpdates: "true"
+        token: "${{ secrets.GITHUB_TOKEN }}"
