@@ -30,7 +30,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 <br>**Jest to niezwykle niebezpieczne.**
 <br>**Włączaj tylko wtedy, gdy jest to absolutnie konieczne!**
 
-<table><tr><td><font color="red">Tutaj wpisz swój tekst</font></td></tr></table>
+![](https://img.shields.io/badge/UWAGA-Tutaj_wpisz_tekst-red)
 
 
 **Obejście blokady**:
