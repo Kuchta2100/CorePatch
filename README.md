@@ -43,3 +43,26 @@ CorePatch offers several key features to bypass standard Android installation ch
 
 **Disable package verification agent**:
 <br>e.g., Google Play Protect
+
+### Download
+
+**Latest release**: You can download the latest stable version from the [GitHub Releases](https://github.com/LSPosed/CorePatch/releases) page.  
+**Development builds**: Get the latest development builds directly from [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
+**Historical versions**: Older versions are available for download [here](https://soft.shouji.com.cn/down/32512.html).
+
+### Credits
+
+Special thanks to the following for their contributions.
+- [weishu](https://github.com/tiann): For code references.
+- [LSPosed](https://github.com/LSPosed/LSPosed): For the ART Hook Framework.
+- [yujincheng08](https://github.com/yujincheng08): For technical support.
+
+### Community & support
+
+Join the community on [Telegram](https://t.me/core_patch_chat) to discuss the module and get support.  
+If you find this project useful, consider supporting the developer via [PayPal](https://www.paypal.com/paypalme/code620).
+
+### License
+
+CorePatch is released under the GPL V2 license. See the `LICENSE` file for more details.
+
