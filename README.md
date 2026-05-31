@@ -52,7 +52,7 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 ### Pobieranie
 
-**Najnowsze wydanie**: Możesz pobrać najnowszą stabilną wersję ze strony [GitHub Releases](https://github.com/LSPosed/CorePatch/releases).  
+**Najnowsze wydanie**: Możesz pobrać najnowszą stabilną wersję ze strony [GitHub Releases](https://github.com/Kuchta2100/CorePatch-PL/releases).  
 
 **Wersje rozwojowe**: Pobierz najnowsze wersje testowe bezpośrednio z [GitHub Actions](https://github.com/LSPosed/CorePatch/actions).  
 
