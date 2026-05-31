@@ -1,10 +1,13 @@
-name: Android CI
+name: CorePatch
 
 on:
   push:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -23,7 +26,7 @@ jobs:
         cache: 'gradle'
 
     - name: Write key
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch')
       run: |
         if [ ! -z "${{ secrets.SIGNING_KEY }}" ]; then
         echo releaseStorePassword='${{ secrets.KEY_STORE_PASSWORD }}' >> gradle.properties
@@ -36,8 +39,23 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleRelease assembleDebug
 
+    - name: Rename APK
+      run: |
+        mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/CorePatch.apk
+        mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/CorePatch-debug.apk
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: outputs
         path: app/build/outputs/apk
+
+    - name: Upload to Releases
+      if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/PL' || github.event_name == 'workflow_dispatch')
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "app/build/outputs/apk/release/CorePatch.apk,app/build/outputs/apk/debug/CorePatch-debug.apk"
+        tag: "v4.9-2047"
+        name: "CorePatch v4.9 (Build 2047)"
+        allowUpdates: "true"
+        token: "${{ secrets.GITHUB_TOKEN }}"
