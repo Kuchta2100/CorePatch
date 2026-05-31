@@ -27,14 +27,14 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Wyłącz dokładne dopasowanie podpisu**:
 <br>Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. 
-![](https://img.shields.io/badge/UWAGA!-Włączaj%20tylko%20w%20razie%20potrzeby!-red)
+<br>![](https://img.shields.io/badge/UWAGA!-Włączaj%20tylko%20w%20razie%20potrzeby!-red)
 
 
 
 **Użyj zainstalowanych podpisów**:
 <br>Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
-![](https://img.shields.io/badge/UWAGA!-Jest%20to%20niezwykle%20niebezpieczne-red)
-![](https://img.shields.io/badge/Włączaj%20tylko%20wtedy,%20gdy%20jest%20to%20absolutnie%20konieczne%21-red)
+<br>![](https://img.shields.io/badge/UWAGA!-Jest%20to%20niezwykle%20niebezpieczne-red)
+<br>![](https://img.shields.io/badge/Włączaj%20tylko%20wtedy,%20gdy%20jest%20to%20absolutnie%20konieczne%21-red)
 
 
 **Obejście blokady**:
@@ -42,8 +42,8 @@ CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe k
 
 **Pomiń weryfikację wspólnego użytkownika**:
 <br>Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
-![](https://img.shields.io/badge/INFO-Wyłącz%20porównywanie%20podpisów-blue)
-![](https://img.shields.io/badge/musi%20być%20również%20włączone-blue)
+<br>![](https://img.shields.io/badge/INFO-Wyłącz%20porównywanie%20podpisów-blue)
+<br>![](https://img.shields.io/badge/musi%20być%20również%20włączone-blue)
 
 
 **Wyłącz agenta weryfikacji pakietów**:
