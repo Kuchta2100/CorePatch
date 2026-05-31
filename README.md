@@ -25,8 +25,7 @@ CorePatch offers several key features that allow you to bypass standard Android 
 
 **Disable Exact Signature Match**:
 <br>Disables exact signature matching between APKs, allowing installations where each APK fragment has a different signature.
-
- <br>![](https://img.shields.io/badge/WARNING!-Enable%20only%20w%20razie%20needs!-red)
+<br>![](https://img.shields.io/badge/WARNING!-Enable%20only%20w%20razie%20needs!-red)
 
 **Use installed signatures**:
 <br>Always uses the signatures of already installed apps during installation.
