@@ -14,7 +14,7 @@ Używaj najnowszej wersji aplikacji Vector.
 CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe kontrole instalacji systemu Android.
 
 **Zezwól na obniżenie wersji**: 
-Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd `INSTALL_FAILED_VERSION_DOWNGRADE`.
+\nUmożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd "INSTALL_FAILED_VERSION_DOWNGRADE".
 
 **Wyłącz weryfikację skrótu**:
 Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
@@ -23,10 +23,10 @@ Umożliwia instalację aplikacji po zmodyfikowaniu pliku APK
 **Wyłącz porównywanie podpisów**
 Zezwala na ponowną instalację aplikacji z innymi podpisami
 
-**Wyłącz dokładne dopasowanie podpisu**
+**Wyłącz dokładne dopasowanie podpisu**:
 Wyłącza dokładne dopasowanie podpisu między pakietami APK, umożliwiając instalacje, w których każdy fragment APK ma inny podpis. Włączaj tylko w razie potrzeby!
 
-**Użyj zainstalowanych podpisów**
+**Użyj zainstalowanych podpisów**:
 Zawsze podczas instalacji będą używane podpisy już zainstalowanych aplikacji.
 Jest to niezwykle niebezpieczne.
 Włączaj tylko wtedy, gdy jest to absolutnie konieczne!
@@ -34,9 +34,9 @@ Włączaj tylko wtedy, gdy jest to absolutnie konieczne!
 **Obejście blokady**
 Pomija listę blokowanych instalacji na niektórych urządzeniach, np. Nothing Phone.
 
-**Pomiń weryfikację wspólnego użytkownika**
+**Pomiń weryfikację wspólnego użytkownika**:
 Umożliwia instalację aplikacji z podpisem innym niż współdzielony przez nich użytkownik.
 ("Wyłącz porównywanie podpisów” musi być również włączona)
 
-**Wyłącz agenta weryfikacji pakietów**
+**Wyłącz agenta weryfikacji pakietów**:
 np. Google Play Protect
