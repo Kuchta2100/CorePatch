@@ -1,4 +1,4 @@
-name: CorePatch-PL
+name: CorePatch
 
 on:
   push:
@@ -39,14 +39,14 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: CorePatch-PL
+        name: CorePatch
         path: app/build/outputs/apk
     - name: Release
       if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v1
       with:
         files: app/build/outputs/apk/**/*.apk
-        tag_name: v.4.9
+        tag_name: CorePatch 4.9
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
