@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ PL ]
-    tags: [ '4.9' ]
+    tags: [ 4.9 ]
   pull_request:
   merge_group:
 
