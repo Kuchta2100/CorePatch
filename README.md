@@ -10,7 +10,7 @@ Ta wersja jest przeznaczona wyłącznie dla systemu **Android 9–16.**
 
 ## Funkcje
 
-CorePatch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe kontrole instalacji systemu Android.
+Core Patch oferuje kilka kluczowych funkcji pozwalających ominąć standardowe kontrole instalacji systemu Android.
 
 **Zezwól na obniżenie wersji aplikacji**:
 <br>Umożliwia zainstalowanie starszej wersji aplikacji, eliminując błąd: 
